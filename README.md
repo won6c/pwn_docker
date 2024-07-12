@@ -1,7 +1,7 @@
 #How to build docker for pwn with Dockerfile
 ---
-1. docker build -t [image name]:[tag]
-2. docker run -it -d [container name] [imagename]:[tag]
+1. docker build -t [image name]:[tag] or docker build .(if you have Dockerfile)
+2. docker run -it -d --name [container name] [imagename]:[tag]
 3. docker exec -it [container name] /bin/bash
 
 #To attach gdb at poc.py
